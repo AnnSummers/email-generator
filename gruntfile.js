@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   var globalConfig = {
     target: grunt.option('target')
   };
-  
+
   // Project configuration.
   grunt.initConfig({
     globalConfig: globalConfig,
@@ -19,11 +19,25 @@ module.exports = function(grunt) {
         "templateData": "./<%= globalConfig.target  %>/template_data.json",
         "partials": "./<%= globalConfig.target  %>/partials/*.html"
       }
+    },
+    indent: {
+      html: {
+        src: [
+          './<%= globalConfig.target  %>/build/*.html'
+        ],
+        dest: './<%= globalConfig.target  %>/build/',
+        options: {
+          style: 'space',
+          size: 4,
+          change: -99
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-compile-handlebars');
+  grunt.loadNpmTasks('grunt-indent');
 
-  grunt.registerTask('default', ['compile-handlebars:globbedTemplateAndOutput']);
+  grunt.registerTask('default', ['compile-handlebars:globbedTemplateAndOutput', 'indent:html']);
 
 };

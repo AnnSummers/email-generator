@@ -1,47 +1,68 @@
 <!-- One Column -->
 {{#if navigation}}
-<table width="580" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#eeeeed" style="border-top:1px solid #333333; border-bottom: 1px solid #333333;margin-bottom:10px;">
+<table width="{{ template_width }}" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#eeeeed" style="margin-bottom:10px;">
     <tr>
-        <td style="padding:font-size: 12px; color: #3b3b3b; font-weight: normal; text-align: center; font-family:Arial, Helvetica, sans-serif; padding:10px 0 10px 0; width:20%; " bgcolor="#FFFFFF" align="center" height="21">
-            {{#each navigation}}
-                <a href="{{this.link}}?utm_source=Newsletter&utm_medium=Email&utm_content={{this.utm_content}}&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" style="text-decoration: none; color: #3b3b3b;" class="{{this.class}}">{{this.label}}</a>
-
-                {{#unless @last}}<span class="{{this.class}}">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>{{/unless}}
-            {{/each}}
+        {{#each navigation}}
+        <td bgcolor="#FFFFFF"{{#unless @last}} style="padding-right:4px;"{{/unless}}{{#if this.class}} class="{{this.class}}"{{/if}}>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                  <div>
+                    <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{this.link}}?utm_source=Newsletter&utm_medium=Email&utm_content={{this.utm_content}}&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" style="height:34px;v-text-anchor:middle;width:100%;" fillcolor="{{ this.btn_color }}">
+                        <w:anchorlock/>
+                        <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:14px;">{{this.label}}<span class="hidden-tablet" style="color:{{ this.arrow_color }}"> &nbsp;&#10095;</span></center>
+                      </v:roundrect>
+                    <![endif]-->
+                    <a href="{{this.link}}?utm_source=Newsletter&utm_medium=Email&utm_content={{this.utm_content}}&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" style="background-color:{{ this.btn_color }};color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;line-height:34px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;mso-hide:all;">{{this.label}}<span class="hidden-tablet" style="color:{{ this.arrow_color }}"> &nbsp;&#10095;</span></a>
+                  </div>
+                </td>
+              </tr>
+            </table>
         </td>
+        {{/each}}
     </tr>
 </table>
 {{/if}}
 
 {{#if hero }}
-<table width="580"  class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#eeeeed">
+<table width="{{ template_width }}"  class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#eeeeed">
     <tr>
         <td valign="top" style="padding:0" bgcolor="#ffffff" align="center">
-            <a href="{{ hero.link }}?utm_source=Newsletter&utm_medium=Email&utm_content=Hero&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank"><img class="deviceWidth" src="{{ hero.image }}" alt="Style your Summer" title="Style your Summer" border="0" style="display: block;width: 580px" /></a>
+            <a href="{{ hero.link }}?utm_source=Newsletter&utm_medium=Email&utm_content=Hero&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank"><img class="deviceWidth" src="{{ hero.image }}" alt="Style your Summer" title="Style your Summer" border="0" style="display: block;width: {{ template_width }}px" /></a>
         </td>
     </tr>
     <tr>
         <td style="font-size: 13px; color: #333333; font-weight: normal; text-align: left; font-family:Arial, Helvetica, sans-serif; line-height: 21px; vertical-align: top; padding:10px 8px 10px 15px" bgcolor="#eeeeed">
-            <table>
+            {{#if intro_headline }}
+            <table width="100%" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="543" valign="middle" style="padding:0 10px 10px 0; text-align:center;"><a href="http://www.annsummers.com/c/sale?utm_source=Newsletter&utm_medium=Email&utm_content=Herotext&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank" style="text-decoration: none; font-size: 15px; color: #ec008c; font-weight: bold; font-family:Arial, sans-serif; text-align:center; ">It's back – Britain's Sexiest Sale is now on!</a>
+                    <td width="100%" valign="middle" style="padding-bottom:10px; text-align:center;">
+                        <a href="http://www.annsummers.com/c/sale?utm_source=Newsletter&utm_medium=Email&utm_content=Herotext&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank" style="text-decoration: none; font-size: 15px; color: #ec008c; font-weight: bold; font-family:Arial, sans-serif; text-align:center;">
+                        {{ intro_headline }}
+                        </a>
                     </td>
                 </tr>
             </table>
-            <table width="100%" cellspacing="0" cellpadding="0" >
-                <td width="100%" style="text-align:center;">
-                    <p style="text-decoration: none; color: #000000;">
-                        Now's your chance to revamp your lingerie drawer and stock up on sets for the bedroom or everyday wear. Save up to 50% across the site, including our bestselling lingerie collections and sexiest erotic wear.
-                    </p>
-                </td>
+            {{/if}}
+            {{#if intro_text }}
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="100%" style="text-align:center;">
+                        <p style="text-decoration: none; color: #000000;">
+                            {{ intro_text }}
+                        </p>
+                    </td>
+                </tr>
             </table>
+            {{/if}}
         </td>
     </tr>
 </table>
 {{/if}}
 
 {{#if promotional_pods}}
-<table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#eeeeed">
+<table width="{{ template_width }}" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#eeeeed">
     <tr>
         <td height="150" class="center" style="padding:10px 0 10px 0">
             <!--[if (gte mso 9)|(IE)]>

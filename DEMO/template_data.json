@@ -1,38 +1,53 @@
 {
 
     "campaign_id": "20150611TH-SALE-E1",
-
     "campaign_keyword": "SALE",
 
     "subject_line": "My Subject Line...",
+
+    "intro_headline": "It's back - Britain's Sexiest Sale is now on!",
+    "intro_text": "Now's your chance to revamp your lingerie drawer and stock up on sets for the bedroom or everyday wear. Save up to 50% across the site, including our bestselling lingerie collections and sexiest erotic wear.",
+
+
+    "template_width": "635",
 
     "navigation": [
         {
             "label": "OFFERS",
             "link": "http://www.annsummers.com/c/special-offers",
-            "utm_content": "Offers"
+            "utm_content": "Offers",
+            "btn_color": "#000000",
+            "arrow_color": "#999999"
         },
         {
             "label": "LINGERIE",
             "link": "http://www.annsummers.com/c/lingerie",
-            "utm_content": "Lingerie"
+            "utm_content": "Lingerie",
+            "btn_color": "#000000",
+            "arrow_color": "#999999"
         },
         {
             "label": "SEX TOYS",
             "link": "http://www.annsummers.com/c/sex-toys",
-            "utm_content": "SexToys"
+            "utm_content": "SexToys",
+            "btn_color": "#000000",
+            "arrow_color": "#999999"
         },
         {
             "label": "EROTIC",
             "link": "http://www.annsummers.com/c/erotic",
             "utm_content": "Erotic",
-            "class": "hide_mobile"
+            "btn_color": "#000000",
+            "arrow_color": "#999999",
+            "class": "hidden-mobile"
         },
         {
             "label": "BOOK A PARTY",
             "link": "http://www.annsummers.com/page/new-why-book",
             "utm_content": "Bookaparty",
-            "class": "hide_mobile"
+            "btn_color": "#000000",
+            "arrow_color": "#999999",
+            "class": "hidden-mobile"
         },
     ],
 
@@ -52,7 +67,7 @@
             "label": "EROTIC",
             "link": "http://www.annsummers.com/c/erotic",
             "utm_content": "Erotic",
-            "class": "hide_mobile"
+            "class": "hidden-mobile"
         },
     ],
 
