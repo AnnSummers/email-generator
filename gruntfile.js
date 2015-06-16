@@ -8,16 +8,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     globalConfig: globalConfig,
     'compile-handlebars': {
-      globbedTemplateAndOutput: {
+      dynamicTemplate: {
         files: [{
-            expand: true,
-            cwd: './<%= globalConfig.target  %>/',
-            src: '<%= globalConfig.target  %>.html',
-            dest: './<%= globalConfig.target  %>/build/',
-            ext: '.html'
+            src: './<%= globalConfig.target  %>/template.html',
+            dest: './<%= globalConfig.target  %>/build/<%= globalConfig.target  %>.html'
         }],
-        "templateData": "./<%= globalConfig.target  %>/template_data.json",
-        "partials": "./<%= globalConfig.target  %>/partials/*.html"
+        templateData: "./<%= globalConfig.target  %>/template_data.json",
+        partials: "./<%= globalConfig.target  %>/partials/*.html"
       }
     },
     indent: {
@@ -38,6 +35,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-indent');
 
-  grunt.registerTask('default', ['compile-handlebars:globbedTemplateAndOutput', 'indent:html']);
+  grunt.registerTask('default', ['compile-handlebars:dynamicTemplate', 'indent:html']);
 
 };
