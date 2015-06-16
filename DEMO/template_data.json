@@ -4,18 +4,18 @@
 
     "campaign_keyword": "SALE",
 
-    "subject_line": "New subject line",
+    "subject_line": "My Subject Line...",
 
     "navigation": [
-        {
-            "label": "LINGERIE",
-            "link": "http://www.annsummers.com/c/lingerie",
-            "utm_content": "Lingerie"
-        },
         {
             "label": "OFFERS",
             "link": "http://www.annsummers.com/c/special-offers",
             "utm_content": "Offers"
+        },
+        {
+            "label": "LINGERIE",
+            "link": "http://www.annsummers.com/c/lingerie",
+            "utm_content": "Lingerie"
         },
         {
             "label": "SEX TOYS",
