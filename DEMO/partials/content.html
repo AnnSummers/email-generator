@@ -4,43 +4,43 @@
     <tr>
         <td style="padding:font-size: 12px; color: #3b3b3b; font-weight: normal; text-align: center; font-family:Arial, Helvetica, sans-serif; padding:10px 0 10px 0; width:20%; " bgcolor="#FFFFFF" align="center" height="21">
             {{#each navigation}}
-                <a href="{{this.link}}?utm_source=Newsletter&utm_medium=Email&utm_content={{this.utm_content}}&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:SALE&dcs_em=##CuCusto2##" style="text-decoration: none; color: #3b3b3b;" class="{{this.class}}">{{this.label}}</a>
+                <a href="{{this.link}}?utm_source=Newsletter&utm_medium=Email&utm_content={{this.utm_content}}&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" style="text-decoration: none; color: #3b3b3b;" class="{{this.class}}">{{this.label}}</a>
 
                 {{#unless @last}}<span class="{{this.class}}">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>{{/unless}}
-            {{/each}}                                                     
+            {{/each}}
         </td>
     </tr>
 </table>
 {{/if}}
- 
-{{#if hero }}         
+
+{{#if hero }}
 <table width="580"  class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#eeeeed">
     <tr>
         <td valign="top" style="padding:0" bgcolor="#ffffff" align="center">
-            <a href="{{ hero.link }}?utm_source=Newsletter&utm_medium=Email&utm_content=Hero&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:SALE&dcs_em=##CuCusto2##" target="_blank"><img class="deviceWidth" src="{{ hero.image }}" alt="Style your Summer" title="Style your Summer" border="0" style="display: block;width: 580px" /></a>                     
+            <a href="{{ hero.link }}?utm_source=Newsletter&utm_medium=Email&utm_content=Hero&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank"><img class="deviceWidth" src="{{ hero.image }}" alt="Style your Summer" title="Style your Summer" border="0" style="display: block;width: 580px" /></a>
         </td>
     </tr>
     <tr>
         <td style="font-size: 13px; color: #333333; font-weight: normal; text-align: left; font-family:Arial, Helvetica, sans-serif; line-height: 21px; vertical-align: top; padding:10px 8px 10px 15px" bgcolor="#eeeeed">
             <table>
                 <tr>
-                    <td width="543" valign="middle" style="padding:0 10px 10px 0; text-align:center;"><a href="http://www.annsummers.com/c/sale?utm_source=Newsletter&utm_medium=Email&utm_content=Herotext&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:SALE&dcs_em=##CuCusto2##" target="_blank" style="text-decoration: none; font-size: 15px; color: #ec008c; font-weight: bold; font-family:Arial, sans-serif; text-align:center; ">It's back – Britain's Sexiest Sale is now on!</a>
+                    <td width="543" valign="middle" style="padding:0 10px 10px 0; text-align:center;"><a href="http://www.annsummers.com/c/sale?utm_source=Newsletter&utm_medium=Email&utm_content=Herotext&utm_campaign={{ campaign_id }}&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank" style="text-decoration: none; font-size: 15px; color: #ec008c; font-weight: bold; font-family:Arial, sans-serif; text-align:center; ">It's back – Britain's Sexiest Sale is now on!</a>
                     </td>
                 </tr>
             </table>
             <table width="100%" cellspacing="0" cellpadding="0" >
                 <td width="100%" style="text-align:center;">
                     <p style="text-decoration: none; color: #000000;">
-                        Now's your chance to revamp your lingerie drawer and stock up on sets for the bedroom or everyday wear. Save up to 50% across the site, including our bestselling lingerie collections and sexiest erotic wear. 
+                        Now's your chance to revamp your lingerie drawer and stock up on sets for the bedroom or everyday wear. Save up to 50% across the site, including our bestselling lingerie collections and sexiest erotic wear.
                     </p>
                 </td>
             </table>
         </td>
-    </tr>              
-</table>         
+    </tr>
+</table>
 {{/if}}
- 
-{{#if promotional_pods}}   
+
+{{#if promotional_pods}}
 <table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#eeeeed">
     <tr>
         <td height="150" class="center" style="padding:10px 0 10px 0">
@@ -50,29 +50,29 @@
             <table width="289" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth" style="width:50%;">
                 <tr>
                     <td align="center">
-                        <a href="http://www.annsummers.com/page/holiday-competition?utm_source=Newsletter&utm_medium=email&utm_content=Footer1&utm_campaign=20150608MO-HS-E43&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:SALE&dcs_em=##CuCusto2##" target="_blank">
+                        <a href="http://www.annsummers.com/page/holiday-competition?utm_source=Newsletter&utm_medium=email&utm_content=Footer1&utm_campaign=20150608MO-HS-E43&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##" target="_blank">
                             <img width="285" src="http://www.annsummers.com/html/images/email/2015_06_11/promopod1_285x180.jpg" alt="Win A Holiday!" title="Win A Holiday!" border="0" style="width: 285px" class="deviceWidth" />
-                        </a> 
+                        </a>
                     </td>
-                </tr> 
-                                      
+                </tr>
+
             </table>
            <!--[if (gte mso 9)|(IE)]>
              </td>
-             <![endif]-->   
+             <![endif]-->
              <!--[if (gte mso 9)|(IE)]>
              <td align="center">
-             <![endif]-->               
+             <![endif]-->
             <table width="289" border="0" cellpadding="0" cellspacing="0" align="right" class="deviceWidth" style="width:50%;">
                 <tr>
                     <td align="center">
-                        <a href="http://www.annsummers.com/page/DeliveryReturns?utm_source=Newsletter&utm_medium=email&utm_content=Footer2&utm_campaign=20150608MO-HS-E43&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:SALE&dcs_em=##CuCusto2##"><img width="285" src="http://www.annsummers.com/html/images/email/2015_06_11/promopod2_285x180.jpg" alt="Click &amp; Collect" title="Click &amp; Collect" border="0" style="width: 285px" class="deviceWidth" /></a>
+                        <a href="http://www.annsummers.com/page/DeliveryReturns?utm_source=Newsletter&utm_medium=email&utm_content=Footer2&utm_campaign=20150608MO-HS-E43&_$ja=tsid:63435|cgn:{{ campaign_id }}|kw:{{ campaign_keyword }}&dcs_em=##CuCusto2##"><img width="285" src="http://www.annsummers.com/html/images/email/2015_06_11/promopod2_285x180.jpg" alt="Click &amp; Collect" title="Click &amp; Collect" border="0" style="width: 285px" class="deviceWidth" /></a>
                     </td>
-                </tr>                     
-            </table>                                        
+                </tr>
+            </table>
             <!--[if (gte mso 9)|(IE)]>
              </td>
-             <![endif]-->   
+             <![endif]-->
         </td>
     </tr>
 </table>
