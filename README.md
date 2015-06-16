@@ -1,4 +1,4 @@
-# email-generator
+# THE EMAILIFICATOR-9000
 Build email templates using [Grunt](http://gruntjs.com/) to compile them into email-client ready HTML.
 
 ##How it works##
