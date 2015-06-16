@@ -9,7 +9,8 @@ First it compiles the template, then it strip all indentation to save on file si
 
 ## Installation ##
 
-Install Node.js (and npm, which comes with it) [Node Install Guide](https://docs.npmjs.com/getting-started/installing-node).
+- Install Node.js (and npm, which comes with it) [Node Install Guide](https://docs.npmjs.com/getting-started/installing-node).
+- After these are installed run `sudo npm install grunt -g` and then `sudo npm install grunt-cli -g`
 
 ## Usage ##
 
