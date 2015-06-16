@@ -1,2 +1,9 @@
+# Logs
+logs
+*.log
+
+# Grunt intermediate storage
+.grunt
+/*
 /node_modules
 /build
