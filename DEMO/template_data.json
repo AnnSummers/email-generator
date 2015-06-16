@@ -1,0 +1,74 @@
+{
+
+    "campaign_id": "20150611TH-SALE-E1",
+
+    "campaign_keyword": "SALE",
+
+    "subject_line": "New subject line",
+
+    "navigation": [
+        {
+            "label": "LINGERIE",
+            "link": "http://www.annsummers.com/c/lingerie",
+            "utm_content": "Lingerie"
+        },
+        {
+            "label": "OFFERS",
+            "link": "http://www.annsummers.com/c/special-offers",
+            "utm_content": "Offers"
+        },
+        {
+            "label": "SEX TOYS",
+            "link": "http://www.annsummers.com/c/sex-toys",
+            "utm_content": "SexToys"
+        },
+        {
+            "label": "EROTIC",
+            "link": "http://www.annsummers.com/c/erotic",
+            "utm_content": "Erotic",
+            "class": "hide_mobile"
+        },
+        {
+            "label": "BOOK A PARTY",
+            "link": "http://www.annsummers.com/page/new-why-book",
+            "utm_content": "Bookaparty",
+            "class": "hide_mobile"
+        },
+    ],
+
+    "hero": {
+        "link": "http://www.annsummers.com/c/sale",
+        "image": "http://www.annsummers.com/html/images/email/2015_06_11/580x580hero.gif",
+    },
+
+
+    "product_pods": [
+        {
+            "label": "SEX TOYS",
+            "link": "http://www.annsummers.com/c/sex-toys",
+            "utm_content": "SexToys"
+        },
+        {
+            "label": "EROTIC",
+            "link": "http://www.annsummers.com/c/erotic",
+            "utm_content": "Erotic",
+            "class": "hide_mobile"
+        },
+    ],
+
+
+    "promotional_pods": [
+        {
+            "alt_text": "OFFERS",
+            "link": "http://www.annsummers.com/c/special-offers",
+            "utm_content": "Offers"
+        },
+        {
+            "alt_text": "OFFERS",
+            "link": "http://www.annsummers.com/c/lingerie",
+            "utm_content": "Lingerie"
+        },
+    ],
+
+    "social_links": true,
+}

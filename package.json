@@ -1,0 +1,9 @@
+{
+  "name": "email-compiler",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-compile-handlebars": "^2.0.0"
+  }
+}
