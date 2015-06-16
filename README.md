@@ -13,10 +13,10 @@ Install Node.js (and npm, which comes with it) [Node Install Guide](https://docs
 
 ## Usage ##
 
-1) Duplicate an existing email folder in 'Current Work/Work/Giles/EMAIL/EMAIL TEMPLATES' and rename the new folder with the desired camapign ID e.g. '20150620ST-SALE-E7b'
-2) Open the 'Terminal' application (cmdline on Windows).
-3) Type `cd Volumes/Current\ Work/Work/Giles/EMAIL/EMAIL\ TEMPLATES` to navigate to the EMAIL TEMPLATES folder.
-4) Type `grunt --target="CAMPAIGN-ID-GOES-HERE"` e.g. `grunt --target="20150620ST-SALE-E7b"`
+- Duplicate an existing email folder in `Current Work/Work/Giles/EMAIL/EMAIL TEMPLATES` and rename the new folder with the desired camapign ID e.g. `20150620ST-SALE-E7b`
+- Open the 'Terminal' application (cmdline on Windows).
+- Type `cd Volumes/Current\ Work/Work/Giles/EMAIL/EMAIL\ TEMPLATES` to navigate to the EMAIL TEMPLATES folder.
+- Type `grunt --target="CAMPAIGN-ID-GOES-HERE"` e.g. `grunt --target="20150620ST-SALE-E7b"`
 
 After the script processes you will find the resulting HTML in a folder named 'build' inside your campaign folder e.g. `/EMAIL TEMPLATES/20150620ST-SALE-E7b/build/20150620ST-SALE-E7b.html`
 
